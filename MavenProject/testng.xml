@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Ma première suite de test" parallel="none">
+	<test name="Test avec Firefox">
+		<parameter name="browser" value="firefox" />
+    	<classes>
+      		<class name="NGTest.dataProviderTest"/>
+    	</classes>
+  	</test>
+	<test name="Test avec Chrome">
+		<parameter name="browser" value="chrome" />
+    	<classes>
+      		<class name="NGTest.dataProviderTest"/>
+    	</classes>
+  	</test>
+</suite>
